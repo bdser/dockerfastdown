@@ -24,8 +24,5 @@ RUN wget https://github.com/rabbitmq/rabbitmq-prometheus/archive/v3.8.3.tar.gz  
     mv v3.8.3.tar.gz /p8s/  && \ 
     wget https://github.com/kbudde/rabbitmq_exporter/releases/download/v1.0.0-RC7/rabbitmq_exporter-1.0.0-RC7.linux-amd64.tar.gz && \ 
     mv rabbitmq_exporter-1.0.0-RC7.linux-amd64.tar.gz /p8s/  
-#pgsql
-RUN wget https://github.com/wrouesnel/postgres_exporter/releases/download/v$Pgsql/postgres_exporter_v$Pgsql_linux-amd64.tar.gz && \
-    mv postgres_exporter_v0.8.0_linux-amd64.tar.gz  /p8s/  
 
 CMD [ "sleep", "360000000" ]
