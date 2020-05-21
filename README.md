@@ -1,2 +1,2 @@
-# dockerfastdown
-加速下载k8s等文件
+# docker-fast
+加速下载国外文件

@@ -1,10 +1,11 @@
-# Download kubernetes binaries
-# @author: budongshu
+# Download kubernetes binaries 
+# @author: budongshu  
 FROM alpine:3.9
 MAINTAINER budongshu@haodf.com
 #RUN apk --no-cache add wget
 
 ENV K8S_VER=v1.17.3
+
 
 RUN wget https://dl.k8s.io/$K8S_VER/kubernetes-server-linux-amd64.tar.gz && \
     tar zxf kubernetes-server-linux-amd64.tar.gz && \
