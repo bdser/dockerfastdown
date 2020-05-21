@@ -6,7 +6,7 @@ MAINTAINER budongshu@haodf.com
 ENV NodeExporter=0.18.1
 ENV MysqldExporter=0.12.1
 ENV MongodbExporter=0.11.0
-ENV Pgsql=v0.8.0
+ENV Pgsql=0.8.0
 #mysqld
 RUN wget https://github.com/prometheus/mysqld_exporter/releases/download/v$MysqldExporter/mysqld_exporter-$MysqldExporter.linux-amd64.tar.gz && \
     mkdir -p /p8s && mv mysqld_exporter-$MysqldExporter.linux-amd64.tar.gz  /p8s/
@@ -25,7 +25,7 @@ RUN wget https://github.com/rabbitmq/rabbitmq-prometheus/archive/v3.8.3.tar.gz  
     wget https://github.com/kbudde/rabbitmq_exporter/releases/download/v1.0.0-RC7/rabbitmq_exporter-1.0.0-RC7.linux-amd64.tar.gz && \ 
     mv rabbitmq_exporter-1.0.0-RC7.linux-amd64.tar.gz /p8s/  
 #pgsql
-RUN wget https://github.com/wrouesnel/postgres_exporter/releases/download/$Pgsql/postgres_exporter_$Pgsql_linux-amd64.tar.gz && \
+RUN wget https://github.com/wrouesnel/postgres_exporter/releases/download/v$Pgsql/postgres_exporter_v$Pgsql_linux-amd64.tar.gz && \
     mv postgres_exporter_v0.8.0_linux-amd64.tar.gz  /p8s/  
 
 CMD [ "sleep", "360000000" ]
