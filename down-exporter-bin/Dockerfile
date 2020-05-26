@@ -24,7 +24,7 @@ RUN wget https://github.com/rabbitmq/rabbitmq-prometheus/archive/v3.8.3.tar.gz  
     mv v3.8.3.tar.gz /p8s/  && \ 
     wget https://github.com/kbudde/rabbitmq_exporter/releases/download/v1.0.0-RC7/rabbitmq_exporter-1.0.0-RC7.linux-amd64.tar.gz && \ 
     mv rabbitmq_exporter-1.0.0-RC7.linux-amd64.tar.gz /p8s/  
-RUN  wget ftp://ftp.gnu.org/gnu/gcc/gcc-6.3.0/gcc-6.3.0.tar.gz && \ 
+RUN wget ftp://ftp.gnu.org/gnu/gcc/gcc-6.3.0/gcc-6.3.0.tar.gz && \ 
      mv gcc-6.3.0.tar.gz /p8s/ 
 
 CMD [ "sleep", "360000000" ]
